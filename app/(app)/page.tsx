@@ -191,12 +191,12 @@ export default function Dashboard() {
               daySymbol = "✔";
             }
             if (day === "Mon") {
-              dayStyle = "bg-red-200 text-red-800";
-              daySymbol = "✖";
+              dayStyle = "bg-green-200 text-green-800";
+              daySymbol = "✔";
             }
             if (day === "Tue") {
-              dayStyle = "bg-red-200 text-red-800";
-              daySymbol = "✖";
+              dayStyle = "bg-green-200 text-green-800";
+              daySymbol = "✔";
             }
 
             // 🌟 Wednesday turns green only when goal is reached
