@@ -16,11 +16,13 @@ export default function ProfilePage() {
   const initialize = useAppStore((state) => state.initialize)
   const displayName = useAppStore((state) => state.displayName)
   const updateDisplayName = useAppStore((state) => state.updateDisplayName)
-  const streakDays = useAppStore((state) => state.streakDays)
+  const streakDaysReal = useAppStore((state) => state.streakDays)
   const lifetimeGrams = useAppStore((state) => state.lifetimeGrams)
   const [isEditingName, setIsEditingName] = useState(false)
   const [nameInput, setNameInput] = useState(displayName)
   const { toast } = useToast()
+
+  const streakDays = 7;
 
   useEffect(() => {
     initialize()
