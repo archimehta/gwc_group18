@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 interface StatCardProps {
   title: string
   value: string | number
-  caption: string
+  caption: React.ReactNode
   icon?: ReactNode
 }
 
